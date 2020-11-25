@@ -58,7 +58,7 @@
                     <li><a href="#pricing" class="smoothScroll">Кого мы ищем?</a></li>
 				<li><a href="#about" class="smoothScroll">О нас</a></li>
 				<li><a href="#screenshot" class="smoothScroll">Преимущества работы с нами</a></li>
-        		     <li><a href="#" data-toggle="modal" data-target="#modal1">Контакты</a></li>
+        		     <li><a href="#" data-toggle="modal" data-target="#modal1">Заказать обратный звонок</a></li>
 			</ul>
 		</div>
 
@@ -307,12 +307,14 @@
 
                <div class="col-md-8 col-sm-6">
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
-                         <p>Copyright &copy; 2016 JenkaButko
+                         <p>Copyright &copy; 2016 JenkaButko</p>
                          <span>||</span> 
+                         <h3>По всем вопросам звоните: </h3>
+                         <p><a href="tel:267-401-0988" class="fa fa-phone"> Егор 267-401-0988</a></p>
                     </div>
                </div>
 
-			<div class="col-md-4 col-sm-6">
+			<!-- <div class="col-md-4 col-sm-6">
 				<ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
                          <li><a href="#" class="fa fa-circle-o-notch"></a></li>
                          <li><a href="#" class="fa fa-circle-o-notch"></a></li>
@@ -320,10 +322,11 @@
                          <li><a href="#" class="fa fa-circle-o-notch"></a></li>
                          <li><a href="#" class="fa fa-circle-o-notch"></a></li>
                     </ul>
-               </div>
+               </div> -->
 			
 		</div>
-	</div>
+     </div>
+     <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 </footer>
 
 
@@ -334,17 +337,20 @@
       <div class="modal-content modal-popup">
           <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <h2 class="modal-title">Contact Form</h2>
+               <h2 class="modal-title">Контактная форма</h2>
           </div>
 
-               <form action="#" method="post">
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
-                 	<input name="email" type="email" class="form-control" id="email" placeholder="Email Address" required>
-                 	<textarea name="message" rows="3" class="form-control" id="message" placeholder="Message" required></textarea>
-                    <input name="submit" type="submit" class="form-control" id="submit" value="Send Message">
+               <form action="https://script.google.com/macros/s/AKfycbw2VkFnBJsxbNW7QtC1a5QJVBjCIwwersVZVS1-/exec" 
+               method="post" target="dummyframe" class="gform">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Твое имя" required>
+                 	<input name="email" type="tel" class="form-control" id="email" placeholder="Номер телефона" required>
+                 	<textarea name="message" rows="3" class="form-control" id="message" placeholder="Примечания"></textarea>
+                    <input name="submit" type="submit" class="form-control" id="submit" value="Отправить" onclick="CloseModal();">
                </form>
           </div>
      </div>
+
+     
 </div>
 
 

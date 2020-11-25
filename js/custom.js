@@ -1,4 +1,7 @@
-
+function CloseModal() {
+  document.getElementsByClassName("close")[0].click()
+}
+  
 
   /*-------------------------------------------------------------------------------
     PRE LOADER
