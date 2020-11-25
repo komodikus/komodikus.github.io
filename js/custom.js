@@ -1,5 +1,20 @@
 function CloseModal() {
-  document.getElementsByClassName("close")[0].click()
+  let senderName = document.forms[0].name.value
+  let senderPhoneNumber = document.forms[0].phone.value
+  
+  let phoneRegEx4 = "^[0-9]{10}$"
+  let phoneRegEx1 = "^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$"
+  let phoneRegEx2 = "^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+  let phoneRegEx3 = "^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$"
+  let phoneRegEx4 = "^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$"
+  
+  if (senderName != "" && senderPhoneNumber!= ""){
+    if (phoneRegEx1.test(senderPhoneNumber) || phoneRegEx2.test(senderPhoneNumber)
+     || phoneRegEx3.test(senderPhoneNumber) || phoneRegEx4.test(senderPhoneNumber)){
+      document.getElementsByClassName("close")[0].click()
+    }
+    
+}
 }
   
 
