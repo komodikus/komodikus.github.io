@@ -305,8 +305,8 @@ a:hover, a:active, a:focus {
 }
 
 #home img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 #home .home-thumb {
@@ -443,9 +443,7 @@ a:hover, a:active, a:focus {
    Pricing section         
 -----------------------------------------*/
 
-#pricing {
-  background: #535bd4;
-}
+
 
 #pricing .pricing-plan {
   background-color: #ffffff;
