@@ -47,7 +47,7 @@ h2 {
 
 h3 {
   color: #535bd4;
-  font-size: 22px;
+  font-size: 36px;
   line-height: 32px;
   padding-bottom: 4px;
 }
@@ -347,7 +347,9 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    About section              
 -----------------------------------------*/
-
+#about {
+  background: #535bd4;
+}
 #about img {
   width: 100%;
 }
@@ -442,7 +444,6 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    Pricing section         
 -----------------------------------------*/
-
 
 
 #pricing .pricing-plan {
