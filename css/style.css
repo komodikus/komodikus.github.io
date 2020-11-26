@@ -155,6 +155,24 @@ a:hover, a:active, a:focus {
 }
 
 
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: white;
+  margin-bottom: 1em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container-card {
+  padding: 2px 16px;
+}
+
 /*---------------------------------------
     Preloader section              
 -----------------------------------------*/
@@ -355,9 +373,6 @@ a:hover, a:active, a:focus {
 #about {
   background: #535bd4;
 }
-#about img {
-  width: 100%;
-}
 
 #about .about-thumb {
   margin-bottom: 32px;
@@ -475,6 +490,7 @@ a:hover, a:active, a:focus {
 #pricing .pricing-plan .section-btn:hover {
   background-color: #ffffff;
   color: #222;
+  border: none;
 }
 
 
