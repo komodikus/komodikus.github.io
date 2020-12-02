@@ -1,21 +1,12 @@
 function CloseModal() {
-  let senderName = document.forms[0].name.value
-  let senderPhoneNumber = document.forms[0].phone.value
-  
-  let phoneRegEx5 = RegExp("^[0-9]{10}$")
-  let phoneRegEx1 = RegExp("^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$")
-  let phoneRegEx2 = RegExp("^[0-9]{3}-[0-9]{3}-[0-9]{4}$")
-  let phoneRegEx3 = RegExp("^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$")
-  let phoneRegEx4 = RegExp("^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$")
-  
-  if (senderName != "" && senderPhoneNumber!= ""){
-    if (phoneRegEx1.test(senderPhoneNumber) || phoneRegEx2.test(senderPhoneNumber)
-     || phoneRegEx3.test(senderPhoneNumber) || phoneRegEx4.test(senderPhoneNumber)  || phoneRegEx5.test(senderPhoneNumber)){
-      document.getElementsByClassName("close")[0].click()
-    }
-    
+document.getElementsByClassName("close")[0].click()
+document.getElementsByClassName("close")[1].click()
+document.getElementsByClassName("close")[2].click()
+document.getElementsByClassName("close")[3].click()
+document.getElementsByClassName("close")[4].click()
+$("#modal-thanks").modal()   
 }
-}
+
   
 
   /*-------------------------------------------------------------------------------
